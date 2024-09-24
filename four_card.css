@@ -1,0 +1,41 @@
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%); 
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --dark_blue: hsl(234, 12%, 34%);
+    --gray_blue: hsl(229, 6%, 66%);
+    --light_gray: hsl(0, 0%, 98%);
+
+    --fw-200: 200;
+    --fw-400: 400;
+    --fw-600: 600;
+}
+
+body{
+    font-family: Poppins, sans-serif;
+    font-size: .938rem;
+}
+
+.header_content{
+    text-align: center;
+    color: var(--dark_blue);
+}
+
+h1{
+    font-size: 1.5rem;
+    font-weight: var(--fw-200);
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+span{
+    font-weight: var(--fw-600);
+}
+
+.header_info{
+    color: var(--gray_blue);
+    padding: 0rem 2rem;
+    margin-bottom: 3rem;
+}
