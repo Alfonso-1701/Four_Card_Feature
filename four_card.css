@@ -20,6 +20,7 @@ body{
 
 .header_content{
     text-align: center;
+    margin: 0px auto;
     color: var(--dark_blue);
 }
 
@@ -37,5 +38,101 @@ span{
 .header_info{
     color: var(--gray_blue);
     padding: 0rem 2rem;
-    margin-bottom: 3rem;
+    margin: 0px auto;
+    margin-bottom: 4rem;
+    max-width: 36rem;
+}
+
+.shell_card{
+    width: 20rem;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    color: var(--gray_blue);
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px -5px;
+    font-size: .8rem;
+    position: relative;
+    padding-bottom: 7rem;
+}
+
+h2{
+    font-weight: var(--fw-600);
+    font-size: 1.1rem;
+    color: var(--dark_blue);
+    margin-bottom: .4rem;
+}
+
+img{
+    width: 3.5rem;
+    margin: 1.5rem;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.supervisor{
+    border-top: 5px solid var(--cyan);
+} 
+
+.builder{
+    border-top: 5px solid var(--red);
+}
+
+.karma{
+    border-top: 5px solid var(--orange);
+}
+
+.calculator{
+    border-top: 5px solid var(--blue);
+    margin-bottom: 4rem;
+}
+
+
+@media (min-width: 1000px) {
+
+    h1{
+        font-size: 2.2rem;
+    }
+
+    .shell_card{
+        padding-bottom: 9rem;
+    }
+
+    .header_info{
+        margin-bottom: 2rem;
+    }
+
+    .shell_card_layout{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        max-width: 65rem;
+        margin: 0px auto;
+    }
+
+    .supervisor{
+        grid-row: 2 / 4;
+        grid-column: 1;
+    }
+    
+    .builder{
+        grid-row: 1 / 3;
+        grid-column: 2;
+    }
+
+    .karma{
+        grid-row: 3 / 5;
+        grid-column: 2;
+    }
+
+    .calculator{
+        grid-row: 2 / 4;
+        grid-column: 3;
+    }
+    
+    .shell_card{
+        margin-bottom: 0px;
+    }
+
+    
 }
